@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" modified="2023-07-11T06:54:06.645Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/114.0.0.0 Safari/537.36" etag="wFhGnx4fIOH11vDL9WGq" version="21.6.1" type="onedrive">
+  <diagram name="ページ1" id="2J6A9QVdiOgfJA2n0qhT">
+    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vgNT_OrytRz-gWTq960S-7" value="クイズ作成" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;fontSize=54;" vertex="1" parent="1">
+          <mxGeometry x="310" y="-590" width="410" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-8" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;クイズ名&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=27;" vertex="1" parent="1">
+          <mxGeometry x="30" y="-440" width="130" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-9" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-440" width="390" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-10" value="TEXTBOX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="-300" width="720" height="320" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-12" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;問題文&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=27;" vertex="1" parent="1">
+          <mxGeometry x="25" y="-320" width="160" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-13" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;選択肢&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=27;" vertex="1" parent="1">
+          <mxGeometry x="15" y="70" width="170" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-21" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="140" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-37" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="250" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-38" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="360" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-39" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="470" width="230" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-45" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="140" width="60" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-46" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="240" width="60" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-47" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;3&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="360" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-49" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;4&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="105" y="470" width="60" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-51" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;正解&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="60" y="605" width="100" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-53" value="TEXT" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="620" width="230" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-54" value="&lt;font style=&quot;font-size: 30px;&quot;&gt;説明&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="70" y="710" width="80" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="vgNT_OrytRz-gWTq960S-71" value="TEXTBOX" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="190" y="740" width="640" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="CIKreAG1U7UWX2aTmNw7-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;確定&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="90" y="959.5" width="120" height="51" as="geometry" />
+        </mxCell>
+        <mxCell id="CIKreAG1U7UWX2aTmNw7-4" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;リセット&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="790" y="960.5" width="120" height="50" as="geometry" />
+        </mxCell>
+        <mxCell id="CIKreAG1U7UWX2aTmNw7-6" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;戻る&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;arcSize=50;" vertex="1" parent="1">
+          <mxGeometry x="55" y="-665" width="105" height="65" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

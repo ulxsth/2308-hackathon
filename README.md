@@ -1,5 +1,5 @@
-# 2308-hackathon
-あとでせいびしま
+# Thinker
+クイズ共有型SNS「Thinker」
 
 # 計画
 \~7/21 画面設計 <br>

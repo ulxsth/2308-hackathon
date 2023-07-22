@@ -12,10 +12,12 @@
         <h2>人気の問題</h2>
         <ul>
             <li>
-                <a href="quiz/answer.php?id=1">
-                    <span class="quiz-title-span">test1</span>
-                    <span class="quiz-posted_date-span">xxxx/xx/xx</span>
-                </a>
+                <div>
+                    <a href="quiz/answer.php?id=1">
+                        <span class="quiz-title-span">test1</span>
+                        <span class="quiz-posted_date-span">xxxx/xx/xx</span>
+                    </a>
+                </div>
             </li>
         </ul>
         </div>
@@ -23,10 +25,12 @@
         <h2>新しい問題</h2>
         <ul>
             <li>
-                <a href="quiz/answer.php?id=2">
-                    <span class="quiz-title-span">test2</span>
-                    <span class="quiz-posted_date-span">xxxx/xx/xx</span>
-                </a>
+                <div>
+                    <a href="quiz/answer.php?id=2">
+                        <span class="quiz-title-span">test2</span>
+                        <span class="quiz-posted_date-span">xxxx/xx/xx</span>
+                    </a>
+                </div>
             </li>
         </ul>
         </div>

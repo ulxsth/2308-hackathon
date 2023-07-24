@@ -12,7 +12,7 @@
             <!-- PHPで正誤によって表示を切り替え -->
             <div class="result-correct">
                 <img src="/thinker/assets/images/correct.png">
-                <p>正解</p>
+                <h1>正解</h1>
             </div>
 
             <div class="answer">
@@ -30,11 +30,21 @@
             </div>
         </div>
 
+        <hr>
+
         <div class="recommend-container">
-            <h1>他の問題を探す</h1>
+            <h1>ほかの問題を探す</h1>
             <div class="quizzes-same_auther">
                 <h2>同じ作者の問題</h2>
                 <ul class="recommend-list">
+                    <li>
+                        <div class="quiz-item">
+                            <a href="quiz/answer.php?id=1">
+                                <span class="quiz-title-span">test1</span>
+                                <span class="quiz-posted_date-span">xxxx/xx/xx</span>
+                            </a>
+                        </div>
+                    </li>
                     <li>
                         <div class="quiz-item">
                             <a href="quiz/answer.php?id=1">
@@ -57,10 +67,18 @@
                             </a>
                         </div>
                     </li>
+                    <li>
+                        <div class="quiz-item">
+                            <a href="quiz/answer.php?id=1">
+                                <span class="quiz-title-span">test1</span>
+                                <span class="quiz-posted_date-span">xxxx/xx/xx</span>
+                            </a>
+                        </div>
+                    </li>
                 </ul>
             </div>
 
-            <button onclick="location.href='#'">トップに戻る</button>
+            <button class="back_top-button" onclick="location.href='#'">トップに戻る</button>
         </div>
     </div>
 </body>

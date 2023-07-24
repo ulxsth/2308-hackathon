@@ -47,7 +47,9 @@ body {
 .quizzes-same_auther, .quizzes-recommend {
     margin: 4rem auto;
 }
-
+.recommend-list {
+    margin: 1rem auto;
+}
 .recommend-list li {
     list-style: none;
     margin-bottom: 0.5rem;

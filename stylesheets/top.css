@@ -43,12 +43,10 @@ ul{
 .quiz-item{
     width: 80%;
     margin: auto;
-    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
     border-left: 1rem solid #7EC1FF;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     background-color: #ECECEC;
-    padding-top: 2%;
-    padding-bottom: 2%;
 }
 
 .quiz-item a{
@@ -64,15 +62,16 @@ ul{
 
 h1{
     text-align: center;
-    font-size: 3rem;
-    padding-top: 10%;
+    font-size: 2rem;
+    padding-top: 2rem;
+    margin-bottom: 3.5rem;
 }
 
 h2{
-    font-size: 2rem;
+    font-size: 1.6rem;
     text-align: center;
-    padding-bottom: 2%;
-    margin-top: 2%;
+    padding-bottom: 2rem;
+    margin: 0.5rem;
 }
 
 

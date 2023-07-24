@@ -10,19 +10,24 @@
         <h1>ログイン</h1>
         <div class="login">
         <form action="login.php" method="POST">
+            <div class="form-component">
             <label for="id" class="form-label">ユーザーID</label><br>
             <input type="text" name="id" class="form-input">
             <div class="error login-id-error">
-
+            エラー文
 
             </div>
-            <br><label for="passward" class="form-label">パスワード<br>
-            <input type="text" name="passward" class="form-input"><br>
+            </div>
+            <br>
+            <div class="form-component">
+            <label for="passward" class="form-label">パスワード</label><br>
+            <input type="text" name="passward" class="form-input">
             <div class="error login-pass-error">
-
+            エラー文
 
             </div>
-            <input type="button" value="ログイン" class="button-input">
+            </div>
+            <button type="submit" class="button-input">ログイン</button>
         </form>
         </div>
 
@@ -31,25 +36,33 @@
         <h1>新規登録</h1>
         <div class="register">
         <form action="login.php" method="POST">
+        <div class="form-component">
         <label for="id" class="form-label">ユーザーID</label><br>
-        <div class="error register-id-error">
-
-
-        </div>
         <input type="text" name="id" class="form-input">
-        <br><label for="passward" class="form-label">パスワード</label><br>
-        <div class="error register-pass-error">
-
+        <div class="error register-id-error">
+        エラー文
 
         </div>
+        </div>
+        <br>
+        <div class="form-component">
+        <label for="passward" class="form-label">パスワード</label><br>
         <input type="text" name="passward" class="form-input">
-        <br><label for="passward_confirm" class="form-label">パスワード(確認)</label><br>
-        <div class="error register-pass_confirm-error">
-
+        <div class="error register-id-error">
+        エラー文
 
         </div>
-        <input type="text" name="passward_confirm" class="form-input"><br>
-            <input type="button" value="新規登録" class="button-input">
+        </div>
+        <br>
+        <div class="form-component">
+        <label for="passward_confirm" class="form-label">パスワード(確認)</label><br>
+        <input type="text" name="passward_confirm" class="form-input">
+        <div class="error register-id-error">
+        エラー文
+
+        </div>
+        </div>
+        <button type="submit" class="button-input">新規登録</button>
         </form>
         </div>
     </body>

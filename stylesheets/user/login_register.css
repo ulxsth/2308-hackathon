@@ -1,0 +1,80 @@
+@charset "UTF-8";
+
+* {
+    margin: 0;
+    padding: 0;
+  }
+
+
+body{
+  background-color: #D9D9D9;
+}
+
+
+h1{
+    text-align: center;
+    font-size: 2rem;
+    margin: 3rem;
+}
+
+
+.all{
+    background-color: aliceblue;
+    margin: 5rem auto;
+    width: 60%;
+    padding: 4rem;
+    max-width: 800px;
+
+}
+
+
+.form-label{
+    font-size: 1rem;
+}
+    
+
+.form-input{
+    text-align: justify;
+    text-justify: auto;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    padding: 0.1rem;
+    border-width: 0.5px;
+}
+
+
+.button-input{
+    display: block;
+	margin: auto;
+    color: #FFF;
+    background: #4877AF;
+    border: none;
+    font-size: 1rem;
+    margin-bottom:2rem;
+    border-radius: 5px;
+    padding: 1rem 3rem;
+    text-align: center;
+}
+
+
+.form-component{
+    margin-bottom: 2rem;
+    padding:1rem;
+}
+
+
+hr{
+   margin: 3rem;
+   text-align: center; 
+   
+}
+
+
+.error{
+    color: red;
+}
+
+
+

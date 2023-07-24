@@ -5,22 +5,28 @@
     padding: 0;
   }
 
-body {
+
+body{
   background-color: #D9D9D9;
 }
 
-h1 {
+
+h1{
     text-align: center;
     font-size: 2rem;
     margin: 3rem;
 }
 
+
 .all{
     background-color: aliceblue;
-    margin: 0 auto;
+    margin: 5rem auto;
     width: 60%;
     padding: 4rem;
+    max-width: 800px;
+
 }
+
 
 .form-label{
     font-size: 1rem;
@@ -38,6 +44,7 @@ h1 {
     border-width: 0.5px;
 }
 
+
 .button-input{
     display: block;
 	margin: auto;
@@ -51,16 +58,19 @@ h1 {
     text-align: center;
 }
 
+
 .form-component{
     margin-bottom: 2rem;
     padding:1rem;
 }
+
 
 hr{
    margin: 3rem;
    text-align: center; 
    
 }
+
 
 .error{
     color: red;

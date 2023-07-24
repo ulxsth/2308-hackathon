@@ -12,7 +12,8 @@ body{
     background-color: aliceblue;
     width: 80%;
     margin: auto;
-    padding-bottom: 5%;
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
 }
 
 .quiz-title-span{

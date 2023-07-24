@@ -46,6 +46,7 @@
             </div>
 
             <div class="quizzes-recommend">
+                <h2>おすすめの問題</h2>
                 <ul class="recommend-list">
                     <li>
                         <div class="quiz-item">

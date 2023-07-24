@@ -34,3 +34,42 @@ h1{
     border-radius: 20px;
     padding: 80px;
 }
+.choice-mei{
+    padding-right: 400px;
+}
+.choice-text{
+    width: 40%;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+.answer-mei{
+    padding-right: 500px;
+}
+select{
+    width: 43%;
+    border-radius: 15px;
+    padding: 15px;
+}
+.description-mei{
+    padding-right: 400px;
+}
+.submit-button{
+    position: relative;
+    left: 350px;
+    background:#4877AF;color: white;
+    width: 15%;
+    line-height: 3;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 5px;
+}
+.reset-button{
+    position: relative;
+    left: 500px;
+    width: 15%;
+    line-height: 3;
+    padding: 10px 0;
+    border-radius: 10px;
+    border: 5px;
+}

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thinker</title>
+    <link rel="stylesheet" href="/thinker/stylesheets/result.css">
 </head>
 <body>
     <div class="contents-container">

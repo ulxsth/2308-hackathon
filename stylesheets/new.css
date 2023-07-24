@@ -1,75 +1,103 @@
 @charset "UTF-8";
+
 * {
     margin: 0;
     padding: 0;
-  }
-body{
+}
+
+body {
     background: #D9D9D9;
 }
-.operation-screen{
+
+.operation-screen {
     background: aliceblue;
+    width: 70%;
+    margin: 0 auto;
 }
-h1{
+
+h1 {
     text-align: center;
     padding-top: 30px;
     padding-bottom: 30px;
 }
-.form-content{
+
+.form-content {
     text-align: center;
     padding-bottom: 30px;
 }
-.quiz-mei{
+
+.quiz-mei {
     padding-right: 400px;
 }
-.quiz-text{
+
+.quiz-text {
     width: 40%;
     border-radius: 20px;
     padding: 20px;
 }
-.content-mei{
+
+.content-mei {
     padding-right: 400px;
 }
-.content-text{
-    width: 30%;
+
+.content-text {
+    width: 27%;
     border-radius: 20px;
     padding: 80px;
 }
-.choice-mei{
+
+.choice-mei {
     padding-right: 400px;
 }
-.choice-text{
+
+.choice-text {
     width: 40%;
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 20px;
 }
-.answer-mei{
-    padding-right: 500px;
+
+.answer-mei {
+    padding-right: 400px;
 }
-select{
-    width: 43%;
+
+select {
+    margin-left: 1rem;
+    width: 45%;
     border-radius: 15px;
     padding: 15px;
 }
-.description-mei{
+
+.description-mei {
     padding-right: 400px;
 }
-.submit-button{
+
+.submit-button {
     position: relative;
-    left: 350px;
-    background:#4877AF;color: white;
+    left: 250px;
+    background: #4877AF;
+    color: white;
     width: 15%;
     line-height: 3;
     padding: 10px 0;
     border-radius: 10px;
     border: 5px;
 }
-.reset-button{
+
+.reset-button {
     position: relative;
-    left: 500px;
+    left: 350px;
     width: 15%;
     line-height: 3;
     padding: 10px 0;
     border-radius: 10px;
     border: 5px;
+}
+
+textarea {
+    resize: none;
+}
+
+span {
+    padding-right: 1rem;
 }

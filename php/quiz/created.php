@@ -14,5 +14,6 @@
                 <button class="answer-button" onclick="location.href='answer.php'">問題へ</button>
                 <button class="top-button" onclick="location.href='top.php'">TOPに戻る</button>
             </div>
+        </div>
     </body>
 </html>

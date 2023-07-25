@@ -5,8 +5,9 @@
     padding: 0;
 }
 
-img{
+.check-img{
     width: 10%;
+    height: 10%;
     margin: auto;
     display: block;
 }

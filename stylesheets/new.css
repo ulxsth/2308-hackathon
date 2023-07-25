@@ -8,13 +8,25 @@
 body {
     background: #D9D9D9;
 }
-
-.operation-screen {
+.content-container{
     background: aliceblue;
     width: 70%;
     margin: 0 auto;
 }
 
+.operation-screen {
+    width: 80%;
+    margin: 0 auto;
+}
+.operation-screen input{
+    width: 100%;
+}
+.operation-screen select{
+    width: 100%;
+}
+.operation-screen textarea{
+    width: 100%;
+}
 h1 {
     text-align: center;
     padding-top: 30px;
@@ -22,59 +34,40 @@ h1 {
 }
 
 .form-content {
-    text-align: center;
     padding-bottom: 30px;
 }
 
-.quiz-mei {
-    padding-right: 400px;
-}
 
 .quiz-text {
-    width: 40%;
     border-radius: 20px;
     padding: 20px;
 }
 
-.content-mei {
-    padding-right: 400px;
-}
 
 .content-text {
-    width: 27%;
     border-radius: 20px;
-    padding: 80px;
+    padding:  100px 20px;
 }
 
-.choice-mei {
-    padding-right: 400px;
-}
 
 .choice-text {
-    width: 40%;
+    margin-left: 10px;
     border-radius: 15px;
     padding: 15px;
     margin-bottom: 20px;
 }
 
-.answer-mei {
-    padding-right: 400px;
-}
 
 select {
     margin-left: 1rem;
-    width: 45%;
     border-radius: 15px;
     padding: 15px;
 }
 
-.description-mei {
-    padding-right: 400px;
-}
 
 .submit-button {
     position: relative;
-    left: 250px;
+    left: 15rem;
     background: #4877AF;
     color: white;
     width: 15%;
@@ -86,7 +79,7 @@ select {
 
 .reset-button {
     position: relative;
-    left: 350px;
+    left: 27rem;
     width: 15%;
     line-height: 3;
     padding: 10px 0;

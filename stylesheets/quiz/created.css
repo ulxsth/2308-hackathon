@@ -32,9 +32,15 @@ body{
     padding-bottom: 0.5rem;
 }
 
+.button{
+    padding-bottom: 6rem;
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    margin: auto;
+}
+
 .answer-button{
-    position: relative;
-    margin-left: 13%;
     margin-right: 10rem;
     background: #4877AF;
     color: white;
@@ -46,14 +52,9 @@ body{
 }
 
 .top-button{
-    position: relative;
     width: 8rem;
     line-height: 1rem;
     padding: 10px 0;
     border-radius: 10px;
     border: 0.08rem solid #000;
-}
-
-.button{
-    padding-bottom: 6rem;
 }

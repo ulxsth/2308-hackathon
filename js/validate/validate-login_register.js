@@ -1,24 +1,35 @@
 process.stdin.resume();
 process.stdin.setEncoding('utf8');
 
-function validateAndDisplayId() {
-    var loginId = document.getElementById("login-id-error");
-    var loginPass = document.getElementById("login-pass-error");
-    var legisterId = document.getElementById("register-id-error");
-    var legisterPass = document.getElementById("register-pass-error");
-    var legisterPassConfirm = document.getElementById("register-pass-confirm-error");
+function validateAndDisplay(id,pass) {
+    
+    var alphanumeric = /^[a-zA-Z0-9_]*$/;
+    var alphanumericsymbol = /^[a-zA-Z0-9!@#$%^&*]*$/;
+    var thatisall = /^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])$/;
     // 1文字以上15文字以下か
     if (loginId.length<1 || loginId.length>15){
         //文字についてのエラーをここに
     }
+
     // 許可する入力は英数字、アンダースコアだけ
-    if (/^[a-zA-Z0-9_]*$/.test(loginId)) {
-      // アンダースコアが先頭・末尾にある場合はfalse
-      if (/^[_]|[_]$/.test(loginId)) {
-        return false;
-      }
-      // それ以外はtrue
-      return true;
+    if (!alphanumeric.test(id)) {
+        
     }
-    return false;
+    
+    //8文字以上36文字以下か
+    if(loginPass.length<8 || loginPass.length>36){
+
+    }
+
+    //許可するのは英数字、記号のみ
+    if (!alphanumericsymbol.test(loginPass)) {
+      
+    }
+    
+    //大文字、小文字、数字をそれぞれ1文字以上含んでいるか
+    if(!thatisall.test()){
+
+    }
+
+
   }

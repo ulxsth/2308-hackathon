@@ -40,34 +40,33 @@ h1 {
 
 .quiz-text {
     border-radius: 20px;
-    padding: 20px;
+    padding: 20px 0;
 }
 
 
 .content-text {
     border-radius: 20px;
-    padding:  100px 20px;
+    padding:  100px 0;
 }
 
 
 .choice-text {
-    margin-left: 10px;
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px 0;
     margin-bottom: 20px;
 }
 
 
 select {
-    margin-left: 1rem;
     border-radius: 15px;
-    padding: 15px;
+    padding: 15px 0;
 }
 
-
+.button{
+    display: flex;
+    justify-content: space-around;
+}
 .submit-button {
-    position: relative;
-    left: 15rem;
     background: #4877AF;
     color: white;
     width: 15%;
@@ -78,8 +77,6 @@ select {
 }
 
 .reset-button {
-    position: relative;
-    left: 27rem;
     width: 15%;
     line-height: 3;
     padding: 10px 0;

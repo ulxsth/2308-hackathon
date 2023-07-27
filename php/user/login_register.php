@@ -24,7 +24,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" name="passward" class="form-input" required>
+                    <input type="text" name="passward_login" class="form-input" required>
                     <div id="login-pass-error" class="error">
                         エラー文
 
@@ -50,7 +50,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" name="passward" class="form-input" required>
+                    <input type="text" name="passward_logister" class="form-input" required>
                     <div id="register-pass-error" class="error">
                         エラー文
 

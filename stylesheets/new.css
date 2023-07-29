@@ -20,6 +20,7 @@ body {
 }
 .operation-screen input{
     width: 100%;
+    border-radius: 20px;
 }
 .operation-screen select{
     width: 100%;
@@ -39,32 +40,33 @@ h1 {
 
 
 .quiz-text {
-    border-radius: 20px;
     padding: 20px 0;
 }
 
 
 .content-text {
-    border-radius: 20px;
+    border: 10px;
+    border-radius: 20px ;
     padding:  100px 0;
 }
 
 
 .choice-text {
-    border-radius: 15px;
     padding: 15px 0;
     margin-bottom: 20px;
 }
 
 
 select {
-    border-radius: 15px;
+    border: 10px;
+    border-radius: 20px;
     padding: 15px 0;
 }
 
 .button{
     display: flex;
     justify-content: space-around;
+    padding-bottom: 40px;
 }
 .submit-button {
     background: #4877AF;
@@ -86,6 +88,8 @@ select {
 
 textarea {
     resize: none;
+    vertical-align: top;
+    text-align: left; 
 }
 
 span {

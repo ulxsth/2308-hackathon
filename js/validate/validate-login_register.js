@@ -82,7 +82,7 @@ function validatePasswordCharacterLimit(password) {
 }
 
 function validatePasswordCase(password) {
-  const passwordCaseRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)$/;
+  const passwordCaseRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{1,}$/;
   return passwordCaseRegex.test(password);
 }
 

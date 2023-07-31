@@ -67,7 +67,7 @@ function validateUserId(userId) {
 }
 
 function validateUserIdCharacterLimit(userId) {
-  const userIdCharacterLimitRegex = /^{1,15}$/;
+  const userIdCharacterLimitRegex = /^.{1,15}$/;
   return userIdCharacterLimitRegex.test(userId);
 }
 
@@ -77,7 +77,7 @@ function validatePassword(password) {
 }
 
 function validatePasswordCharacterLimit(password) {
-  const passwordCharacterLimitRegex = /^{8,36}$/;
+  const passwordCharacterLimitRegex = /^.{8,36}$/;
   return passwordCharacterLimitRegex.test(password);
 }
 

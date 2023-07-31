@@ -11,7 +11,7 @@
     <div class="contents-container">
         <h1>ログイン</h1>
         <div class="login">
-            <form action="login.php" onsubmit="return handleForm('login');" method="POST" id="loginForm">
+            <form action="login.php"  method="POST" id="loginForm">
                 <div class="form-component">
                     <label for="id" class="form-label">ユーザーID</label>
                     <input type="text" id ="login_id" name="login_id" class="form-input" required>
@@ -29,7 +29,7 @@
 
         <h1>新規登録</h1>
         <div class="register">
-            <form action="login.php" onsubmit="return handleForm('registration');" method="POST" id="registerForm">
+            <form action="login.php" method="POST" id="registerForm">
                 <div class="form-component">
                     <label for="id" class="form-label">ユーザーID</label>
                     <input type="text" id ="register_id" name="register_id" class="form-input" required>

@@ -23,7 +23,7 @@ function handleForm(formType) {
 } else if (formType === 'registration') {
       const userId = form.register_id.value;
       const password = form.register_pass.value;
-      const confirmPassword = form.register_passward_confirm.value;
+      const confirmPassword = form.register_password_confirm.value;
 
       // バリデーションのチェック
       if (!validateUserId(userId)) {
@@ -82,7 +82,7 @@ function validatePasswordCharacterLimit(password) {
 }
 
 function validatePasswordCase(password) {
-  const passwordCaseRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{1,}$/;
+  const passwordCaseRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
   return passwordCaseRegex.test(password);
 }
 
@@ -92,3 +92,13 @@ function displayErrorMessage(message) {
   errorMessageDiv.style.color = "red";
   document.getElementById("errorMessages").appendChild(errorMessageDiv);
 }
+
+document.getElementById("loginForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+  handleForm('login');
+});
+
+document.getElementById("registerForm").addEventListener("submit", function (event) {
+  event.preventDefault();
+  handleForm('registration');
+});

@@ -42,7 +42,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward_confirm" class="form-label">パスワード(確認)</label>
-                    <input type="text" id ="passconfirm name="register_passward_confirm" class="form-input" required>
+                    <input type="text" id ="passconfirm" name="register_passward_confirm" class="form-input" required>
                 </div>
                 <button type="submit" class="button-input">新規登録</button>
         </div>

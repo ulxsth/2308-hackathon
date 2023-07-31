@@ -1,14 +1,11 @@
-process.stdin.resume();
-process.stdin.setEncoding('utf8');
-
 function handleForm(formType) {
   const form = formType === 'registration' ? document.getElementById("registerForm") : document.getElementById("loginForm");
   const errorMessagesDiv = document.getElementById("errorMessages");
   errorMessagesDiv.innerHTML = "";
 
   if (formType === 'login') {
-    const loginUserId = form.loginUserId.value;
-    const loginPassword = form.loginPassword.value;
+    const loginUserId = form.login_id.value;
+    const loginPassword = form.login_pass.value;
 
     // バリデーションのチェック
     if (!validateUserId(loginUserId)) {
@@ -24,9 +21,9 @@ function handleForm(formType) {
     // ログイン処理（この部分を実際のログイン処理に置き換える）
     alert("ログインが成功しました！");
 } else if (formType === 'registration') {
-      const userId = form.userId.value;
-      const password = form.password.value;
-      const confirmPassword = form.confirmPassword.value;
+      const userId = form.register_id.value;
+      const password = form.register_pass.value;
+      const confirmPassword = form.register_passward_confirm.value;
 
       // バリデーションのチェック
       if (!validateUserId(userId)) {
@@ -65,7 +62,7 @@ function handleForm(formType) {
 }
 
 function validateUserId(userId) {
-  const userIdRegex = /^[a-zA-Z0-9_]$/;
+  const userIdRegex = /^[a-zA-Z0-9_]+$/;
   return userIdRegex.test(userId);
 }
 
@@ -75,7 +72,7 @@ function validateUserIdCharacterLimit(userId) {
 }
 
 function validatePassword(password) {
-  const passwordRegex = /^[a-zA-Z\d!@#$%^&*]$/;
+  const passwordRegex = /^[a-zA-Z\d!@#$%^&*]+$/;
   return passwordRegex.test(password);
 }
 

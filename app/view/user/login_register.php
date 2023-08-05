@@ -11,7 +11,7 @@
     <div class="contents-container">
         <h1>ログイン</h1>
         <div class="login">
-            <form action="login.php"  method="POST" id="loginForm">
+            <form action="/thinker/app/actions/login.php"  method="POST" id="loginForm">
                 <div class="form-component">
                     <label for="id" class="form-label">ユーザーID</label>
                     <input type="text" id ="login_id" name="login_id" class="form-input" required>

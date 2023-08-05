@@ -105,6 +105,33 @@ class UserDAO {
             echo $e->getMessage();
             exit;
         }
+
+        
     }
+
+    /**
+     * ユーザ名からユーザIDを取得する
+     * 存在しない場合にはnullを返す。
+     * 
+     * @param string $name ユーザ名
+     * @return User|null ユーザID
+     */
+    public function getUserIdByName($name) {
+        try {
+            $sql = "SELECT id FROM users WHERE name = :name";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':name', $name, PDO::PARAM_STR);
+            $stmt->execute();
+            $row = $stmt->fetch(PDO::FETCH_ASSOC);
+            if (!$row) {
+                return null;
+            }
+            return new User($row['id']); 
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
+    
 }
 ?>

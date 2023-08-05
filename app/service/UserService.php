@@ -18,5 +18,7 @@ class UserService {
         // ユーザ登録
         return $dao->insert($name, $password_hash);
     }
+
+    
 }
 ?>

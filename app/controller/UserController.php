@@ -17,16 +17,6 @@ class UserController {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/user/login_register.php');
     }
 
-    /**
-     * ユーザの名前からIDを取得する
-     */
-    public static function getUserIdByName($name) {
-        $pdo = PDOFactory::create();
-        $sql = "SELECT id FROM users WHERE name = '$name'";
-        $result = $pdo->query($sql);
-
-        //結果を表示する連想配列形式で取得
-        $row = $result->fetch(PDO::FETCH_ASSOC);
-    }
+    
 }
 ?>

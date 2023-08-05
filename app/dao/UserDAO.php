@@ -106,5 +106,14 @@ class UserDAO {
             exit;
         }
     }
+
+    /**
+     * ユーザデータを削除する。
+     */
+    public function delete()
+
+
+
+
 }
 ?>

@@ -2,7 +2,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/Thinker/stylesheets/top.css">
+        <link rel="stylesheet" href="/Thinker/assets/stylesheets/top.css">
         <title>トップ画面</title>
     </head>
     <body>

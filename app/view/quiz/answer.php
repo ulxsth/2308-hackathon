@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/Thinker/stylesheets/quiz/answer.css">
+    <link rel="stylesheet" href="/Thinker/assets/stylesheets/quiz/answer.css">
     <title>answer</title>
 </head>
 

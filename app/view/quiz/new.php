@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/Thinker/stylesheets/new.css">
+    <link rel="stylesheet" href="/Thinker/assets/stylesheets/new.css">
     <title>Thinker</title>
 </head>
 

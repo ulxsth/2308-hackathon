@@ -3,7 +3,7 @@
 <html lang="ja">
     <head>
         <meta charset="UTF-8">
-        <link rel="stylesheet" href="/Thinker/stylesheets/quiz/created.css">
+        <link rel="stylesheet" href="/Thinker/assets/stylesheets/quiz/created.css">
         <title>クイズ作成成功画面</title>
     </head>
     <body>

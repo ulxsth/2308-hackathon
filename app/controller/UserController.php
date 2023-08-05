@@ -13,7 +13,7 @@ class UserController {
         UserService::signup($name, $password_hash);
 
         // ログイン画面にリダイレクト
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/php/user/login_register.php');
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/user/login_register.php');
     }
 }
 ?>

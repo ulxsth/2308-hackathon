@@ -12,8 +12,8 @@ class UserController {
         // ユーザ登録
         UserService::signup($name, $password_hash);
 
-        // ログイン画面にリダイレクト
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/user/login_register.php');
+        // トップにリダイレクト
+        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/top.php');
     }
 }
 ?>

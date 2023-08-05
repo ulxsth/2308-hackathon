@@ -49,6 +49,7 @@
                 <button type="submit" class="button-input">新規登録</button>
         </form>
         <script src="/Thinker/app/js/validate/validate-login_register.js"></script>
+        </div>
 </body>
 
 </html>

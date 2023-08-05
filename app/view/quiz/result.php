@@ -1,12 +1,15 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thinker</title>
     <link rel="stylesheet" href="/Thinker/assets/stylesheets/result.css">
 </head>
+
 <body>
+    <?php include("../../../assets/components/header-login.html"); ?>
     <div class="contents-container">
         <div class="result-container">
             <!-- PHPで正誤によって表示を切り替え -->
@@ -82,4 +85,5 @@
         </div>
     </div>
 </body>
+
 </html>

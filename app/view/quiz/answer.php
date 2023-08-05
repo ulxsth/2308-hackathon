@@ -8,6 +8,7 @@
 </head>
 
 <body>
+    <?php include ("../../../assets/components/header-login.html"); ?>
     <div class="content-container">
         <div class="operation_screen-quiz-body">
             <h1>問題</h1>
@@ -20,6 +21,7 @@
             </form>
         </div>
     </div>
+
 </body>
 
 </html>

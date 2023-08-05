@@ -23,38 +23,73 @@ function validatePasswordCase(password) {
   return passwordCaseRegex.test(password);
 }
 
-function displayErrorMessage(message) {
+//ログインとパスワードのエラー表示場所
+function displayLoginIdErrorMessage(message) {
   const errorMessageDiv = document.createElement("div");
   errorMessageDiv.innerText = message;
   errorMessageDiv.style.color = "red";
-  document.getElementById("errorMessages").appendChild(errorMessageDiv);
+  document.getElementById("loginIdErrorMessages").innerHTML = "";
+  document.getElementById("loginIdErrorMessages").appendChild(errorMessageDiv);
 }
+
+function displayLoginPassErrorMessage(message) {
+  const errorMessageDiv = document.createElement("div");
+  errorMessageDiv.innerText = message;
+  errorMessageDiv.style.color = "red";
+  document.getElementById("loginPassErrorMessages").innerHTML = "";
+  document.getElementById("loginPassErrorMessages").appendChild(errorMessageDiv);
+}
+
+function displayRegisterIdErrorMessage(message) {
+  const errorMessageDiv = document.createElement("div");
+  errorMessageDiv.innerText = message;
+  errorMessageDiv.style.color = "red";
+  document.getElementById("registerIdErrorMessages").innerHTML = "";
+  document.getElementById("registerIdErrorMessages").appendChild(errorMessageDiv);
+}
+
+function displayRegisterPassErrorMessage(message) {
+  const errorMessageDiv = document.createElement("div");
+  errorMessageDiv.innerText = message;
+  errorMessageDiv.style.color = "red";
+  document.getElementById("registerPassErrorMessages").innerHTML = "";
+  document.getElementById("registerPassErrorMessages").appendChild(errorMessageDiv);
+}
+
+function displayRegisterPassConfirmErrorMessage(message) {
+  const errorMessageDiv = document.createElement("div");
+  errorMessageDiv.innerText = message;
+  errorMessageDiv.style.color = "red";
+  document.getElementById("registerPassConfirmErrorMessages").innerHTML = "";
+  document.getElementById("registerPassConfirmErrorMessages").appendChild(errorMessageDiv);
+}
+
 
 //　ログインのidのinputイベントリスナーを追加
 document.getElementById("login_id").addEventListener("input", function (event) {
   const loginuserId = event.target.value;
-  const errorMessageDiv = document.getElementById("errorMessages");
+  const errorMessageDiv = document.getElementById("loginIdErrorMessages");
   errorMessageDiv.innerHTML = "";
 
   if (!validateUserId(loginuserId)) {
-    displayErrorMessage("ユーザIDは英数字と_（アンダーバー）のみで構成する必要があります。");
+    displayLoginIdErrorMessage("ユーザIDは英数字と_（アンダーバー）のみで構成する必要があります。");
   } else if (!validateUserIdCharacterLimit(loginuserId)) {
-    displayErrorMessage("ユーザIDは1文字以上15文字以下である必要があります。");
+    displayLoginIdErrorMessage("ユーザIDは1文字以上15文字以下である必要があります。");
   }
 });
 
 //　ログインのパスワードのinputイベントリスナーを追加 
 document.getElementById("login_pass").addEventListener("input", function (event) {
   const loginpassword = event.target.value;
-  const errorMessageDiv = document.getElementById("errorMessages");
+  const errorMessageDiv = document.getElementById("loginPassErrorMessages");
   errorMessageDiv.innerHTML = "";
 
   if (!validatePassword(loginpassword)) {
-    displayErrorMessage("パスワードは英数字、もしくは記号（!@#$%^&*）のみで構成される必要があります");
+    displayLoginPassErrorMessage("パスワードは英数字、もしくは記号（!@#$%^&*）のみで構成される必要があります");
   } else if (!validatePasswordCharacterLimit(loginpassword)) {
-    displayErrorMessage("パスワードは,8文字以上36文字以下で構成する必要があります。");
+    displayLoginPassErrorMessage("パスワードは,8文字以上36文字以下で構成する必要があります。");
   } else if (!validatePasswordCase(loginpassword)) {
-    displayErrorMessage("パスワードは大文字、小文字、数字をそれぞれ1文字以上含んでいる必要があります。");
+    displayLoginPassErrorMessage("パスワードは大文字、小文字、数字をそれぞれ1文字以上含んでいる必要があります。");
   }
 });
 
@@ -62,28 +97,28 @@ document.getElementById("login_pass").addEventListener("input", function (event)
 // 新規登録のユーザーIDのinputイベントリスナーを追加
 document.getElementById("register_id").addEventListener("input", function (event) {
   const registeruserId = event.target.value;
-  const errorMessageDiv = document.getElementById("errorMessages");
+  const errorMessageDiv = document.getElementById("registerIdErrorMessages");
   errorMessageDiv.innerHTML = "";
 
   if (!validateUserId(registeruserId)) {
-    displayErrorMessage("ユーザIDは英数字と_（アンダーバー）のみで構成する必要があります。");
+    displayRegisterIdErrorMessage("ユーザIDは英数字と_（アンダーバー）のみで構成する必要があります。");
   } else if (!validateUserIdCharacterLimit(registeruserId)) {
-    displayErrorMessage("ユーザIDは1文字以上15文字以下である必要があります。");
+    displayRegisterIdErrorMessage("ユーザIDは1文字以上15文字以下である必要があります。");
   }
 });
 
 // 新規登録のパスワードのinputイベントリスナーを追加
 document.getElementById("register_pass").addEventListener("input", function (event) {
   const registerpassword = event.target.value;
-  const errorMessageDiv = document.getElementById("errorMessages");
+  const errorMessageDiv = document.getElementById("registerPassErrorMessages");
   errorMessageDiv.innerHTML = "";
 
   if (!validatePassword(registerpassword)) {
-    displayErrorMessage("パスワードは英数字、もしくは記号（!@#$%^&*）のみで構成される必要があります");
+    displayRegisterPassErrorMessage("パスワードは英数字、もしくは記号（!@#$%^&*）のみで構成される必要があります");
   } else if (!validatePasswordCharacterLimit(registerpassword)) {
-    displayErrorMessage("パスワードは,8文字以上36文字以下で構成する必要があります。");
+    displayRegisterPassErrorMessage("パスワードは,8文字以上36文字以下で構成する必要があります。");
   } else if (!validatePasswordCase(registerpassword)) {
-    displayErrorMessage("パスワードは大文字、小文字、数字をそれぞれ1文字以上含んでいる必要があります。");
+    displayRegisterPassErrorMessage("パスワードは大文字、小文字、数字をそれぞれ1文字以上含んでいる必要があります。");
   }
 });
 
@@ -91,10 +126,10 @@ document.getElementById("register_pass").addEventListener("input", function (eve
 document.getElementById("passconfirm").addEventListener("input", function (event) {
   const password = document.getElementById("register_pass").value;
   const confirmPassword = event.target.value;
-  const errorMessageDiv = document.getElementById("errorMessages");
+  const errorMessageDiv = document.getElementById("registerPassConfirmErrorMessages");
   errorMessageDiv.innerHTML = "";
 
   if (password !== confirmPassword) {
-    displayErrorMessage("確認用パスワードが一致しません。");
+    displayRegisterPassConfirmErrorMessage("確認用パスワードが一致しません。");
   }
 });

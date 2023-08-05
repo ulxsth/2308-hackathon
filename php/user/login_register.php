@@ -16,11 +16,12 @@
                     <label for="id" class="form-label">ユーザーID</label>
                     <input type="text" id ="login_id" name="login_id" class="form-input" required>
                 </div>
-                <br>
+                <div id="loginIdErrorMessages"></div>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
                     <input type="password" id ="login_pass" name="login_pass" class="form-input" required>
                 </div>
+                <div id="loginPassErrorMessages"></div>
                 <button type="submit" class="button-input">ログイン</button>
             </form>
         </div>
@@ -34,19 +35,19 @@
                     <label for="id" class="form-label">ユーザーID</label>
                     <input type="text" id ="register_id" name="register_id" class="form-input" required>
                 </div>
-                <br>
+                <div id="registerIdErrorMessages"></div>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" id ="register_pass" name="register_pass" class="form-input" required>
+                    <input type="password" id ="register_pass" name="register_pass" class="form-input" required>
                 </div>
-                <br>
+                <div id="registerPassErrorMessages"></div>
                 <div class="form-component">
                     <label for="passward_confirm" class="form-label">パスワード(確認)</label>
                     <input type="password" id ="passconfirm" name="register_password_confirm" class="form-input" required>
                 </div>
+                <div id="registerPassConfirmErrorMessages"></div>
                 <button type="submit" class="button-input">新規登録</button>
         </form>
-        <div id="errorMessages"></div>
         <script src="/Thinker/js/validate/validate-login_register.js"></script>
 </body>
 

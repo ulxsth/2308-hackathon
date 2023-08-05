@@ -3,7 +3,7 @@ include dirname(__FILE__) . '/../model/User.php';
 include dirname(__FILE__) . '/../service/factory/PDOFactory.php';
 
 /**
- * Userテーブルとのデータベース接続用クラス
+ * Usersテーブルとのデータベース接続用クラス
  */
 class UserDAO {
     private static $pdo;

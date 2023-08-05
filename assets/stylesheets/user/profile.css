@@ -8,6 +8,46 @@ body{
     background-color: #D9D9D9;
 }
 
+.quiz-cliate a{
+    text-decoration: none;
+    color: black;
+    float:left;
+    background-color: white;              /* 背景色：白色 */
+    font-weight: bold;                    /* 太字 */
+    position: relative;
+    border-color: rgb(255, 255, 255);                  /* 枠線の色：黒色 */
+    border-radius: 0.75em 0.75em 0px 0px; /* 枠線の左上角と右上角だけを丸く */
+    padding: 0.75em 1em;
+}
+
+.quiz-solved a{
+    text-decoration: none;
+    color: black;
+    padding-left: 1rem;
+    background-color: white;              /* 背景色：白色 */
+    font-weight: bold;                    /* 太字 */
+    position: relative;
+    border-color: rgb(255, 255, 255);                  /* 枠線の色：黒色 */
+    border-radius: 0.75em 0.75em 0px 0px; /* 枠線の左上角と右上角だけを丸く */
+    padding: 0.75em 1em;
+}
+.tabcontrol a {
+    border-color: rgb(255, 255, 255);                  /* 枠線の色：黒色 */
+    border-radius: 0.75em 0.75em 0px 0px; /* 枠線の左上角と右上角だけを丸く */
+    padding: 0.75em 1em;                  /* 内側の余白 */
+    text-decoration: none;                /* リンクの下線を消す */
+    color: black;                         /* 文字色：黒色 */
+    background-color: white;              /* 背景色：白色 */
+    font-weight: bold;                    /* 太字 */
+    position: relative;                   /* JavaScriptでz-indexを調整するために必要 */
+}
+
+/* ▼タブにマウスポインタが載った際（任意） */
+#tabcontrol a:hover {
+    text-decoration: underline;   /* リンクの下線を引く */
+}
+
+
 .operation_screen-quiz-body{
     background-color: aliceblue;
     width: 80%;

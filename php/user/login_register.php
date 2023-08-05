@@ -19,7 +19,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" id ="login_pass" name="login_pass" class="form-input" required>
+                    <input type="password" id ="login_pass" name="login_pass" class="form-input" required>
                 </div>
                 <button type="submit" class="button-input">ログイン</button>
             </form>
@@ -42,7 +42,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward_confirm" class="form-label">パスワード(確認)</label>
-                    <input type="text" id ="passconfirm" name="register_password_confirm" class="form-input" required>
+                    <input type="password" id ="passconfirm" name="register_password_confirm" class="form-input" required>
                 </div>
                 <button type="submit" class="button-input">新規登録</button>
         </form>

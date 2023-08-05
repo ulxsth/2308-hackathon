@@ -48,7 +48,7 @@
                 <div id="registerPassConfirmErrorMessages"></div>
                 <button type="submit" class="button-input">新規登録</button>
         </form>
-        <script src="/Thinker/js/validate/validate-login_register.js"></script>
+        <script src="/Thinker/app/js/validate/validate-login_register.js"></script>
 </body>
 
 </html>

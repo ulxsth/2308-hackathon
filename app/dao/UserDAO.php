@@ -110,10 +110,11 @@ class UserDAO {
     /**
      * ユーザデータを削除する。
      */
-    public function delete()
-
-
-
+    public function delete(User $user){
+        try{
+            
+        }
+    }
 
 }
 ?>

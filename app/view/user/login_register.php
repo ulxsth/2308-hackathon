@@ -23,7 +23,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" name="passward" class="form-input">
+                    <input type="password" name="passward" class="form-input">
                     <div id="login-pass-error" class="error">
                         エラー文
 
@@ -49,7 +49,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward" class="form-label">パスワード</label>
-                    <input type="text" name="passward" class="form-input">
+                    <input type="password" name="passward" class="form-input">
                     <div id="register-pass-error" class="error">
                         エラー文
 
@@ -58,7 +58,7 @@
                 <br>
                 <div class="form-component">
                     <label for="passward_confirm" class="form-label">パスワード(確認)</label>
-                    <input type="text" name="passward_confirm" class="form-input">
+                    <input type="password" name="passward_confirm" class="form-input">
                     <div id="register-pass-confirm-error" class="error">
                         エラー文
 

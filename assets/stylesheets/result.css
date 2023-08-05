@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #D9D9D9;
+}
+
+.contents-container {
+    width: 75%;
+    margin: 2rem auto;
+    padding: 3rem;
+    background-color: aliceblue;
+}
+
+.result-container {
+    margin-bottom: 3rem;
+}
+
+/* 正誤表示 */
+.result-correct, .result-incorrect {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.result-correct > h1 {
+    color: #4877AF;
+}
+
+/* 答えの表示 */
+.answer {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+.answer > h1 {
+    text-decoration: underline;
+}
+.answer > h2 {
+    color: #7EC1FF;
+}
+
+.recommend-container {
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.quizzes-same_auther, .quizzes-recommend {
+    margin: 4rem auto;
+}
+.recommend-list {
+    margin: 1rem auto;
+}
+.recommend-list li {
+    list-style: none;
+    margin-bottom: 0.5rem;
+}
+.quiz-item {
+    border-left: 1rem solid #7EC1FF;
+    padding: 0.5rem 1rem;
+    background-color: #ECECEC;
+}
+.quiz-item a {
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+}
+
+.back_top-button {
+    background-color: white;
+    border: 1px solid rgb(120, 120, 120);
+    border-radius: 5%;
+    padding: 0.5rem 3rem;
+}

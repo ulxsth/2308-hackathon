@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/Thinker/stylesheets/user/login_register.css">
+    <link rel="stylesheet" href="/Thinker/assets/stylesheets/user/login_register.css">
     <title>ログイン・新規登録画面</title>
 </head>
 

@@ -12,10 +12,8 @@
     include dirname(__FILE__) . '/../app/controller/UserController.php';
 
     // UserControllerのsignupメソッドをテストする
-    $test_data = array(
-        $name = 'test_user',
-        $password = 'test_password',
-    );
+    $name = 'test_user';
+    $password = 'test_password';
     UserController::signup($name, $password);
 
     echo "success";

@@ -16,7 +16,5 @@ class QuizController {
         return QuizService::findByAuthorId($author_id);
     }
 
-
-
 }
 ?>

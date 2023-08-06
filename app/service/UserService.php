@@ -1,20 +1,14 @@
 <?php
-include '/../dao/UserDAO.php';
-include "../model/User.php";
+include dirname(__FILE__) . '/../dao/UserDAO.php';
 
 /**
  * UserDAOとUserControllerの接続をするクラス
  */
 class UserService {
-    private $dao;
-
-    public function __construct() {
-        $this->dao = new UserDAO();
-    }
-
     public static function signup($name, $password_hash) {
+        $dao = new UserDAO();
         // ユーザ名の重複チェック
-        if (!is_null(self::$dao->findByName($name))) {
+        if (!is_null($dao->findByName($name))) {
             throw new Exception("$name is already exists.");
         }
 
@@ -22,12 +16,11 @@ class UserService {
         $password_hash = password_hash($password_hash, PASSWORD_DEFAULT);
 
         // ユーザ登録
-        return self::$dao->insert($name, $password_hash);
+        return $dao->insert($name, $password_hash);
     }
 
     public static function findByName($name) {
         $dao = new UserDAO();
-
         return $dao->findByName($name)->getId();
     }
 }

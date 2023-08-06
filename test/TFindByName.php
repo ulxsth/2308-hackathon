@@ -7,7 +7,7 @@
 </head>
 <body>
     <?php
-    require_once('UserController.php');
+    include("../app/controller/UserController.php");
 
     // UserController::findByNameのテスト
     $userId = UserController::findByName('testuser');

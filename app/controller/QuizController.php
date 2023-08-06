@@ -13,7 +13,7 @@ class QuizController {
     }
 
     public static function fetchQuizzez($author_id) {
-        return QuizService::findByAuthorId($author_id);
+        return QuizService::fetchQuizzez($author_id);
     }
 
 }

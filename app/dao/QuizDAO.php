@@ -65,7 +65,7 @@ class QuizDAO {
      * @param int $author_id
      * @return Quiz[]
      */
-    public function findByAuthorId($author_id) {
+    public function fetchQuizzez($author_id) {
         try {
             $sql = "SELECT * FROM quizzes WHERE author_id = :author_id";
             $stmt = self::$pdo->prepare($sql);

@@ -11,11 +11,8 @@ class UserController {
      * @param string password パスワード
      */
     public static function signup($name, $password) {
-        // パスワードのハッシュ化
-        $password_hash = password_hash($password, PASSWORD_DEFAULT);
-
         // ユーザ登録
-        UserService::signup($name, $password_hash);
+        UserService::signup($name, $password);
     }
 
     public static function signin($name, $password) {

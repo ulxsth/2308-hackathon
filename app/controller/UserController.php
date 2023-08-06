@@ -1,6 +1,5 @@
 <?php
 include dirname(__FILE__) . '/../service/UserService.php';
-include dirname(__FILE__) . '/../service/factory/PDOFactory.php';
 
 /**
  * ユーザ情報を扱うコントローラ。
@@ -8,8 +7,8 @@ include dirname(__FILE__) . '/../service/factory/PDOFactory.php';
 class UserController {
     /**
      * ログイン処理を行う。
-     * @param name ユーザ名
-     * @param password パスワード
+     * @param string name ユーザ名
+     * @param string password パスワード
      */
     public static function signup($name, $password) {
         // パスワードのハッシュ化

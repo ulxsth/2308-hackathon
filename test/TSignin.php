@@ -26,14 +26,14 @@
 
     // UserController::signinのテスト
     try {
-        UserController::signin("test_user", 'test_password');
+        UserController::signin($name, $password);
         echo 'テスト成功';
         echo "sessionid: " . session_id() . "<br>";
-
 
     } catch (Exception $e) {
         echo 'テスト失敗';
         echo $e->getMessage();
+
     } finally {
         // テストユーザを削除
         UserController::deleteById($userId);

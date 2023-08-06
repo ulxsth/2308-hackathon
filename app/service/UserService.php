@@ -44,9 +44,6 @@ class UserService {
         // セッションにユーザIDを保存
         session_start();
         SessionService::set(session_id(), $user->getId());
-
-        // ログイン後の画面にリダイレクト
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/top.php');
     }
 
     public static function findByName($name) {

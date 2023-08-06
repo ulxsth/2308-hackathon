@@ -6,5 +6,10 @@ class QuizService {
         $dao = new QuizDAO();
         return $dao->insert($title, $content, $description, $author_id);
     }
+
+    public static function findByAuthorId($author_id) {
+        $dao = new QuizDAO();
+        return $dao->findByAuthorId($author_id);
+    }
 }
 ?>

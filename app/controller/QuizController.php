@@ -11,5 +11,12 @@ class QuizController {
         // トップにリダイレクト
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/top.php');
     }
+
+    public static function fetchQuizzez($author_id) {
+        return QuizService::findByAuthorId($author_id);
+    }
+
+
+
 }
 ?>

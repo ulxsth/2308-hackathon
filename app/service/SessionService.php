@@ -13,5 +13,9 @@ class SessionService {
     public static function getAllUser() {
         return array_values(self::$sessionMap);
     }
+
+    public static function abort($sessionId) {
+        unset(self::$sessionMap[$sessionId]);
+    }
 }
 ?>

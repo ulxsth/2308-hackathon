@@ -15,5 +15,9 @@ class UserController {
         // トップにリダイレクト
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/top.php');
     }
+
+    public static function signin($name, $password) {
+        UserService::signin($name, $password);
+    }
 }
 ?>

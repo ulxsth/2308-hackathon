@@ -65,7 +65,7 @@ class QuizDAO {
      * @param int $author_id
      * @return Quiz[]
      */
-    public function findByAuthorId($author_id) {
+    public function fetchQuizzes($author_id) {
         try {
             $sql = "SELECT * FROM quizzes WHERE author_id = :author_id";
             $stmt = self::$pdo->prepare($sql);
@@ -80,6 +80,32 @@ class QuizDAO {
         } catch (PDOException $e) {
             echo $e->getMessage();
             return [];
+        }
+    }
+
+    public function deleteById($id) {
+        try {
+            $sql = "DELETE FROM quizzes WHERE id = :id";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
+        }
+    }
+
+    public function deleteByAuthorId($authorId) {
+        try {
+            $sql = "DELETE FROM quizzes WHERE author_id = :author_id";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':author_id', $authorId, PDO::PARAM_INT);
+            $stmt->execute();
+            return true;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return false;
         }
     }
 }

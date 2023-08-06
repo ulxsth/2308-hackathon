@@ -6,5 +6,20 @@ class QuizService {
         $dao = new QuizDAO();
         return $dao->insert($title, $content, $description, $author_id);
     }
+
+    public static function fetchQuizzes($author_id) {
+        $dao = new QuizDAO();
+        return $dao->fetchQuizzes($author_id);
+    }
+
+    public static function deleteByQuizId($quiz_id) {
+        $dao = new QuizDAO();
+        return $dao->deleteById($quiz_id);
+    }
+
+    public static function deleteByAuthorId($author_id) {
+        $dao = new QuizDAO();
+        return $dao->deleteByAuthorId($author_id);
+    }
 }
 ?>

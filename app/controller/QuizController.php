@@ -7,9 +7,16 @@ class QuizController {
         if(!QuizService::create($title, $content, $description, $author_id)) {
             throw new Exception("Failed to create quiz.");
         }
+    }
 
-        // トップにリダイレクト
-        header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/top.php');
+    public static function fetchQuizzes($author_id) {
+        return QuizService::fetchQuizzes($author_id);
+    }
+
+    public static function deleteByQuizId($quizId) {
+        if(!QuizService::deleteByQuizId($quizId)) {
+            throw new Exception("Failed to delete quiz.");
+        }
     }
 }
 ?>

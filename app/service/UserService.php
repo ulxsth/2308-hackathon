@@ -1,5 +1,6 @@
 <?php
 include dirname(__FILE__) . '/../dao/UserDAO.php';
+include dirname(__FILE__) . '/../service/SessionService.php';
 
 /**
  * UserDAOとUserControllerの接続をするクラス

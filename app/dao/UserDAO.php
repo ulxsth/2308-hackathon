@@ -105,8 +105,8 @@ class UserDAO {
             echo $e->getMessage();
             exit;
         }
-    }
 
+    }
     /**
      * ユーザデータを削除する。
      */
@@ -121,6 +121,5 @@ class UserDAO {
             exit;
         }
     }
-
 }
 ?>

@@ -1,4 +1,6 @@
 <?php
+include "../model/Quiz.php";
+
 /**
  * Quizzesテーブルとのデータベース接続用クラス
  */
@@ -32,6 +34,52 @@ class QuizDAO {
         } catch (PDOException $e) {
             echo $e->getMessage();
             return false;
+        }
+    }
+
+    /**
+     * クイズをidで検索する。存在しない場合はnullを返す
+     * @param int $id
+     * @return Quiz|null
+     */
+    public function findById($id) {
+        try {
+            $sql = "SELECT * FROM quizzes WHERE id = :id";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+            $quiz = $stmt->fetch(PDO::FETCH_ASSOC);
+            if ($quiz === false) {
+                return null;
+            }
+            return new Quiz($quiz['id'], $quiz['title'], $quiz['content'], $quiz['description'], $quiz['author_id'], $quiz['created_at'],);
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return null;
+        }
+    }
+
+    /**
+     * 指定したユーザが作成したクイズを全て取得する
+     * @param int $author_id
+     * @return Quiz[]
+     */
+    public function findByAuthorId($author_id) {
+        try {
+            $sql = "SELECT * FROM quizzes WHERE author_id = :author_id";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':author_id', $author_id, PDO::PARAM_INT);
+            $stmt->execute();
+            $quizzes = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            $quiz_list = [];
+            foreach ($quizzes as $quiz) {
+                $quiz_list[] = new Quiz($quiz['id'], $quiz['title'], $quiz['content'], $quiz['description'], $quiz['author_id'], $quiz['created_at']);
+            }
+            return $quiz_list;
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            return [];
         }
     }
 }

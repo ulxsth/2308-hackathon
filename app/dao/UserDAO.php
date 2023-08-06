@@ -105,6 +105,8 @@ class UserDAO {
             echo $e->getMessage();
             exit;
         }
+
     }
+    
 }
 ?>

@@ -21,6 +21,9 @@
     $password = 'test_password_signin';
     UserController::signup($name, $password);
 
+    // テストユーザのデータを取得しておく
+    $userId = UserController::findByName($name);
+
     // UserController::signinのテスト
     try {
         UserController::signin("test_user", 'test_password');
@@ -33,7 +36,7 @@
         echo $e->getMessage();
     } finally {
         // テストユーザを削除
-        
+        UserController::deleteById($userId);
     }
     ?>
 </body>

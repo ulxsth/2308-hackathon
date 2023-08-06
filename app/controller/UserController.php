@@ -35,8 +35,8 @@ class UserController {
      * @param string name ユーザ名
      * @return int|null id
      */
-    public static function deleteUserById($name) {
-        return UserService::deleteUserById($name);
+    public static function deleteById($name) {
+        return UserService::deleteById($name);
     }
 }
 ?>

@@ -12,8 +12,8 @@
     include dirname(__FILE__) . '/../app/controller/UserController.php';
 
     // UserControllerのdeleteメソッドをテストする
-    $name = 'test_user';
-    UserController::deleteUserById($name);
+    $id = 8;
+    UserController::deleteById($id);
 
     echo "success";
     ?>

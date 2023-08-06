@@ -25,7 +25,7 @@ class UserService {
     }
 
     //ユーザデータを削除する
-    public static function deleteUserById($name) {
+    public static function deleteById($name) {
         $dao = new UserDAO();
         return $dao->deleteById($name);
     }

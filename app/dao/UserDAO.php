@@ -109,8 +109,9 @@ class UserDAO {
     }
     /**
      * ユーザデータを削除する。
+     * ユーザidが存在しない場合は何もしない。
      */
-    public function delete(User $user){
+    public function deleteById(User $user){
         try {
             $sql = "DELETE FROM users WHERE id = :id";
             $stmt = self::$pdo->prepare($sql);

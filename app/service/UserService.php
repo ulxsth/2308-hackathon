@@ -23,5 +23,11 @@ class UserService {
         $dao = new UserDAO();
         return $dao->findByName($name)->getId();
     }
+
+    //ユーザデータを削除する
+    public static function deleteUserById($name) {
+        $dao = new UserDAO();
+        return $dao->deleteById($name);
+    }
 }
 ?>

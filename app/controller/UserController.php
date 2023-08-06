@@ -6,6 +6,11 @@ include dirname(__FILE__) . '/../service/factory/PDOFactory.php';
  * ユーザ情報を扱うコントローラ。
  */
 class UserController {
+    /**
+     * ログイン処理を行う。
+     * @param name ユーザ名
+     * @param password パスワード
+     */
     public static function signup($name, $password) {
         // パスワードのハッシュ化
         $password_hash = password_hash($password, PASSWORD_DEFAULT);
@@ -17,6 +22,13 @@ class UserController {
         header('Location: http://' . $_SERVER['HTTP_HOST'] . '/thinker/app/view/user/login_register.php');
     }
 
-    
+    /**
+     * ユーザ名からidを取得する。存在しない場合はnullを返す
+     * @param string name ユーザ名
+     * @return int|null id
+     */
+    public static function findByName($name) {
+        return UserService::findByName($name);
+    }
 }
 ?>

@@ -107,6 +107,21 @@ class UserDAO {
         }
 
     }
-    
+    /**
+     * ユーザデータを削除する。
+     * ユーザidが存在しない場合は何もしない。
+     */
+    public function deleteById($id){
+        try {
+            $sql = "DELETE FROM users WHERE id = :id";
+            $stmt = self::$pdo->prepare($sql);
+            $stmt->bindValue(':id', $id, PDO::PARAM_INT);
+            $stmt->execute();
+
+        } catch (PDOException $e) {
+            echo $e->getMessage();
+            exit;
+        }
+    }
 }
 ?>

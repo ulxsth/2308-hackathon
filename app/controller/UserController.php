@@ -29,5 +29,14 @@ class UserController {
     public static function findByName($name) {
         return UserService::findByName($name);
     }
+
+    /**
+     * ユーザデータを削除する
+     * @param string name ユーザ名
+     * @return int|null id
+     */
+    public static function deleteById($name) {
+        return UserService::deleteById($name);
+    }
 }
 ?>
